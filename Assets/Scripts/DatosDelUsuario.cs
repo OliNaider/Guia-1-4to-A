@@ -9,12 +9,12 @@ public class DatosDelUsuario : MonoBehaviour
     [SerializeField] int edadUsuario;
     [SerializeField] float estaturaUsuario;
     [SerializeField] bool esDonante; 
-    mbox,mc
+   
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Mi nombre es " + nombreUsuario "tengo " + String(edadUsuario) );
+        Debug.Log("Mi nombre es " + nombreUsuario + ",tengo " + edadUsuario);
          
     }
 
