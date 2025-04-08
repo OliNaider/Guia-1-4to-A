@@ -223,6 +223,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 350714b9acf03e54e81902edb36b51af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  montoAConvertir: 10001
+  codigoMoneda: 
 --- !u!4 &1851426440
 Transform:
   m_ObjectHideFlags: 0

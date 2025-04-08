@@ -11,11 +11,16 @@ public class ConversionDeMonedas : MonoBehaviour
     float cotizacionMoneda;
     float montoConvertido;
 
+    float dolar = 1204.32f;
+    float euro = 1541.11f;
+    float reales = 201.24f;
+    float minimoAConvertir = 1000;
+
     // Start is called before the first frame update
     void Start()
     {
         //2 ingreso y validacion de datos
-        if (montoAConvertir < 1000)
+        if (montoAConvertir < minimoAConvertir)
         {
             Debug.Log("El monto mínimo es $1000");
             return; 
@@ -23,13 +28,13 @@ public class ConversionDeMonedas : MonoBehaviour
 
         if(codigoMoneda == "D")
         {
-            cotizacionMoneda = 1204.32f;
+            cotizacionMoneda = dolar;
         } else if (codigoMoneda == "E")
         {
-            cotizacionMoneda = 1541.11f;
+            cotizacionMoneda = euro;
         } else if(codigoMoneda == "R")
         {
-            cotizacionMoneda = 201.24f;
+            cotizacionMoneda = reales;
         } else
         {
             Debug.Log("Opción de moneda extranjera no válida");
